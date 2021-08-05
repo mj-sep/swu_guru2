@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.swu_guru">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Swu_guru">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        //배달음식
+        <activity
+            android:name=".DeliList"
+            android:parentActivityName=".DeliveryIntroActivity"/>
+        <activity
+            android:name=".DeliWrite" />
+        <activity android:name=".DeliveryIntroActivity" />
+        //공동구매
+        <activity
+            android:name=".GroupBuyingView"
+            android:parentActivityName=".GroupBuying"/>
+        <activity
+            android:name=".GroupBuyingWrite"
+            android:parentActivityName=".GroupBuying"/>
+        <activity
+            android:name=".GroupBuying"
+            android:parentActivityName=".MainActivity"/>
+        //물건판매
+        <activity
+            android:name=".MarketWantInfo"
+            android:parentActivityName=".SwuMarketWant" />
+        <activity
+            android:name=".SwuMarketWant"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MarketInfo"
+            android:parentActivityName=".SwuMarketActivity"
+            android:theme="@style/Theme.Swu_guru.NoActionBar" />
+        <activity
+            android:name=".MarektWrite"
+            android:parentActivityName=".SwuMarketActivity" />
+        <activity
+            android:name=".SwuMarketActivity"
+            android:parentActivityName=".MainActivity" />
+        //빌려주기
+        <activity
+            android:name=".BorrowInfo"
+            android:parentActivityName=".BorrowList"/>
+        <activity
+            android:name=".BorrowList"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".BorrowWrite"
+            android:parentActivityName=".BorrowList"/>
+
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RealMainActivity" />
+        <activity
+            android:name=".Mypage"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RegisterActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

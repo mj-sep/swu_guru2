@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/back2"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="800dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/gbbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/backradius"
+
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="공동구매" />
+
+    <Button
+        android:id="@+id/deliButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/backradius"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="공동배달" />
+
+    <Button
+        android:id="@+id/marketButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/backradius"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="물건판매" />
+    <Button
+        android:id="@+id/borrowButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/backradius"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="물건대여" />
+
+
+
+    <Button
+        android:id="@+id/mypageButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/backradius"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:text="마이페이지" />
+
+</LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

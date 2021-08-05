@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SwuMarketActivity">
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_round"
+                android:text="#팔아요"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/wantButton"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_round_white"
+                android:text="#원해요"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnwrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_solid"
+                android:drawableLeft="@drawable/plus_img"
+                android:fontFamily="@font/noto_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="글쓰기"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/marketList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
